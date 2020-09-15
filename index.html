@@ -11,14 +11,12 @@
 
   <title>Adrian De Guzman</title>
 </head>
-<body>
-  <div class="container light-theme" id="container">
+<body class="light-theme" id="body" onload="setTheme(); updateTime()">
+  <div class="container" id="container">
 
     <div class="theme-button" id="button-anim"></div>
     <button class="theme-button" onclick="toggleTheme()" id="theme-button">Dark</button>
-    <!-- TODO: 
-          - Animate Button onclick
-    -->
+    <p id="time"></p>
 
     <header >
       <h1>Adrian De Guzman</h1>
@@ -56,6 +54,14 @@
           - Display 1 card per line in mobile
           - Display 2 card per line in +
         -->
+        <div class="card">
+          <div>
+            title
+          </div>
+          <div style="height: 500px; background-color: gray;">
+            image
+          </div>
+        </div>
       </section>
     </main>
     <hr>
