@@ -1,0 +1,127 @@
+.container{
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{padding: .5rem}
+section{padding: .5rem}
+footer{padding: .5rem}
+
+/*light*/
+.light-theme{background: #f9f9f9; color: black;}
+.light-theme a{color: #1579A8;}
+.light-theme .theme-button{background: #333333; color: white; border: none;}
+.light-theme hr{width: 80%; color: rgba(249, 249, 249, 0.288);}
+.light-theme li{color:#DF164F;}
+.light-theme li a{color:#DF164F;}
+  /* might remove bottom */
+.light-theme ul {background: rgb(83, 83, 83);}
+.light-theme ul .html5{color:#e29c33;}
+.light-theme ul .js{color:#f8df52;}
+.light-theme ul .css3{color:#a3c9ec;}
+
+.light-theme li .bootstrap{color:#a571e9;}
+.light-theme li .react{color:#36bee4;}
+.light-theme li .nodejs{color:#3ba539;}
+.light-theme li .pyt{color: #3c8ed1;} .light-theme li .hon{color: #e7b900;}
+.light-theme li .flask{color: #ffffff;}
+.light-theme li .vs{color:#007bcd;}
+
+/*dark*/
+.dark-theme{background: #333333; color: #f9f9f9;}
+.dark-theme a{color: #1579A8;}
+.dark-theme .theme-button{background: #f9f9f9; color: black; border: none;}
+.dark-theme hr{width: 80%; color: rgba(88, 88, 88, 0.877);}
+.dark-theme li a {color: #b48d9f;}
+.dark-theme li {color: #b48d9f;}
+.dark-theme ul .html5{color:#e29c33;}
+.dark-theme ul .js{color:#f8df52;}
+.dark-theme ul .css3{color:#a3c9ec;}
+.dark-theme li .bootstrap{color:#7c47c8;}
+.dark-theme li .react{color:#61dafb;}
+.dark-theme li .nodejs{color:#448942;}
+.dark-theme li .pyt{color: #3c78a9;} .dark-theme li .hon{color: #e0c145;}
+.dark-theme li .flask{color: #f1f1f1;}
+.dark-theme li .vs{color:#007bcd;}
+
+
+/* text styling */
+.thinner-font{font-weight: 400;}
+h1{font-weight: 400; margin-bottom: 0;}
+h2{font-weight: 500; font-size: 17pt; margin: .5rem 0;}
+.section-info{opacity: .5; font-size: 11pt;}
+p{margin: .5rem 0;}
+a{text-decoration: none;}
+
+ul{
+  display: inline-flex;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+
+}
+li{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12.5pt;
+  padding: 1rem;
+}
+
+/* card */
+.card{
+  display: flex;
+}
+
+.theme-button{
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  margin: 0 1rem 1rem 0;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+  padding: 1rem;
+}
+footer p{margin: 0;}
+
+
+
+
+
+
+/* ----------------
+   Desktop Viewport
+   ---------------- */
+@media (min-width:1281px)  {
+  .container{
+    width: 80%;
+  }
+}
+
+/* ----------------
+        Testing
+   ---------------- */

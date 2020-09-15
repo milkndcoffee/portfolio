@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio in vanilla HTML, CSS, and JS!">
+  <meta name="author" content="Adrian De Guzman">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/switchTheme.js"></script>
+
+  <title>Adrian De Guzman</title>
+</head>
+<body>
+  <div class="container light-theme" id="container">
+
+    <button class="theme-button" onclick="toggleTheme()">L/D</button>
+    <!-- TODO: 
+          - Animate Button onclick
+    -->
+
+    <header >
+      <h1>Adrian De Guzman</h1>
+      <div class="thinner-font">
+        <p class="section-info">
+          Computer Science Graduate<br>
+          Illinois - U.S.
+        </p>
+      </div>
+    </header>
+    <hr>
+    
+    <main>
+      <section>
+        <h2>Language & Tools</h2>
+        <p class="section-info">Coding tools I am familiar with.</p>
+        <ul>
+          <li class="html5">HTML5</li>
+          <li class="js">JS</li>
+          <li class="css3">CSS3</li>
+          <li><a class="bootstrap" href="https://getbootstrap.com/">Bootstrap4</a></li>
+          <li><a class="react" href="https://reactjs.org/">React</a></li>
+          <li><a class="nodejs" href="https://nodejs.org/">Node.js</a></li>
+          <li><a class="pyt" href="https://www.python.org/">Pyt</a><a class="hon" href="https://www.python.org/">hon</a></li>
+          <li><a class="flask" href="https://palletsprojects.com/p/flask/">Flask</a> </li>
+          <li><a class="vs" href="">VS Studio Code</a></li>
+        </ul>
+      </section>
+  
+      <hr>
+      <section>
+        <h2>Projects</h2>
+        <p class="section-info">Works on my freetime.</p>
+        <!-- TODO: 
+          - Display 1 card per line in mobile
+          - Display 2 card per line in +
+        -->
+      </section>
+    </main>
+    <hr>
+    
+    <footer>
+      <p>made w/ luv</p>
+      <a href="mailto:milkndcoffee@gmail.com">milkndcoffee@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
