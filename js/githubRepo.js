@@ -32,7 +32,7 @@ function createProject(data, i) {
   let project = [];
   let title = data.name;
   let description = data.description;
-  let url = data.html_url;
+  let repo = data.html_url;
   let languages;
   /*
     parameter i will allow me to
@@ -41,15 +41,20 @@ function createProject(data, i) {
   switch(i){
     case 0:
       languages = 'Vanilla HTML5, CSS3, JS';
+      title = 'NaRSS';
+      url = 'https://milkndcoffee.github.io/merch-shop/index.html';
       break;
     case 1:
       languages = 'HTML5, CSS3, SCSS, Bootstrap4';
+      url = 'https://milkndcoffee.github.io/bs-healthcare/';
       break;
     case 2:
       languages = 'React, JS, HTML5, CSS3, '
+      url = 'https://milkndcoffee.github.io/react-issues-page/';
       break;
     case 3:
       languages = 'HTML5, Python, Flask, CSS3'
+      url = '#';
       break;
     default:
       languages = '???'
@@ -67,10 +72,10 @@ function createProject(data, i) {
   cardDiv.classList.add('card');
   cardDiv.innerHTML = `
   <div>
-    <h3>${title}</h3>
+    <h3><a href="${url}">${title}</a></h3>
     <div class="under-title">
       <p>${languages}</p>
-      <a href="${url}">source</a>
+      <a href="${repo}">repo</a>
     </div>
   </div>
   <img style=" background-color: gray;">
