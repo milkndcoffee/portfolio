@@ -1,3 +1,13 @@
+<!--
+  TODO:
+  add these
+  <meta property="og:title" content="The Rock" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+  <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+-->
+  
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +17,17 @@
   <meta name="author" content="Adrian De Guzman">
 
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/switchTheme.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/githubRepo.js"></script>
+  <script src="js/time.js"></script>
 
   <title>Adrian De Guzman</title>
 </head>
-<body class="light-theme" id="body" onload="setTheme(); updateTime()">
+<body class="light-theme" id="body" onload="setTheme(); updateTime();">
   <div class="container" id="container">
 
     <div class="theme-button" id="button-anim"></div>
-    <button class="theme-button" onclick="toggleTheme()" id="theme-button">Dark</button>
+    <button class="theme-button" onclick="toggleTheme();" id="theme-button">Dark</button>
     <p id="time"></p>
 
     <header >
@@ -47,21 +59,17 @@
       </section>
   
       <hr>
-      <section>
+      <section id="project-sect">
         <h2>Projects</h2>
         <p class="section-info">Works on my freetime.</p>
         <!-- TODO: 
-          - Display 1 card per line in mobile
-          - Display 2 card per line in +
+          - Mobile:
+            > Display 1 card per line in mobile
+            > make details and image hidden and reveal onclick
+
+          - Tablet/Desktop: 
+            > Display 2 card per line in +
         -->
-        <div class="card">
-          <div>
-            title
-          </div>
-          <div style="height: 500px; background-color: gray;">
-            image
-          </div>
-        </div>
       </section>
     </main>
     <hr>
