@@ -22,9 +22,9 @@ footer{padding: .5rem}
 .light-theme hr{width: 80%; color: rgba(249, 249, 249, 0.288);}
 .light-theme li{color:#DF164F;}
 .light-theme li a{color:#DF164F;}
-.light-theme .card{
-  border: 1px solid rgba(51, 51, 51, 0.24);
-}
+.light-theme .card{border: 1px solid rgba(51, 51, 51, 0.24);}
+.light-theme .card img {border: .5px solid rgba(240, 240, 240, 0.904);}
+
   /* might implement bottom recolor */
   /* 
   .light-theme ul {background: rgb(87, 85, 85);}
@@ -67,6 +67,7 @@ footer{padding: .5rem}
 .dark-theme .under-title a{color:  #1579A8;}
 .dark-theme .under-title p{color: rgba(255, 255, 255, 0.705);}
 
+
 /* text styling */
 .thinner-font{font-weight: 400;}
 h1{font-weight: 400; margin-bottom: 0;}
@@ -89,9 +90,9 @@ li{
   font-size: 12.5pt;
   padding: 1rem;
 }
+.capitalize {text-transform: capitalize;}
 
 /* card */
-  /* placeholder colours should be kept for dark-theme. */
 .card{
   display: inline-flex;
   align-content: center;
@@ -124,12 +125,13 @@ li{
   font-size: 11pt;
 }
 #time{
-  padding: .2rem;
+  padding: .1rem;
   position: fixed;
   bottom: 0;
   left: 0;
   margin: 0 0 1rem 1rem;
   font-size: 10pt;
+  background-color: rgba(129, 129, 129, 0.5);
 }
 
 /* Animations */
@@ -214,11 +216,11 @@ footer p{margin: 0;}
     transition: transform 1s;
   }
   #time{
-    height: 25px;
+    background-color: unset;
     left: unset;
     right: 0;
     margin-right: 11.5%; 
-    margin-bottom: 2%;
+    margin-bottom: 2.3%;
   }
 }
 

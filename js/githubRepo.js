@@ -27,12 +27,12 @@ function getAllData() {
 getAllData();
 
 function createProject(data, i) {
-  
   let projectSect = document.getElementById('project-sect');
   let project = [];
   let title, description, languages; 
-  title = title !== undefined ? data.name : 'ERROR!: rate limit exceeded';
-  description = description !== undefined ? data.description : 'ERROR!: rate limit exceeded';
+  
+  title = title !== 'undefined' ? data.name.replace(/-/g,' ') : 'ERROR!: rate limit exceeded';
+  description = description !== 'undefined' ? data.description : 'ERROR!: rate limit exceeded';
   let repo = data.html_url;
   /*
     parameter i will allow me to
@@ -43,22 +43,22 @@ function createProject(data, i) {
       languages = 'Vanilla HTML5, CSS3, JS';
       title = 'NaRSS';
       url = 'https://milkndcoffee.github.io/merch-shop/index.html';
-      img = '../img/NaRSS.png';
+      img = 'https://raw.githubusercontent.com/milkndcoffee/portfolio/master/img/NaRSS2.png';
       break;
     case 1:
       languages = 'HTML5, CSS3, SCSS, Bootstrap4';
       url = 'https://milkndcoffee.github.io/bs-healthcare/';
-      img = '../img/bs-healthcare.png';
+      img = 'https://raw.githubusercontent.com/milkndcoffee/portfolio/master/img/bs-healthcare.png';
       break;
     case 2:
       languages = 'React, JS, HTML5, CSS3, '
       url = 'https://milkndcoffee.github.io/react-issues-page/';
-      img = '../img/react-issues-page.png';
+      img = 'https://raw.githubusercontent.com/milkndcoffee/portfolio/master/img/react-issues-page.png';
       break;
     case 3:
-      languages = 'HTML5, Python, Flask, CSS3'
-      url = '#';
-      img = '../img/twitter-flask.png';
+      languages = 'Python, Flask, HTML5, CSS3'
+      url = repo;
+      img = 'https://raw.githubusercontent.com/milkndcoffee/portfolio/master/img/twitter-flask2.png';
       break;
     default:
       languages = '???'
@@ -76,7 +76,7 @@ function createProject(data, i) {
   cardDiv.classList.add('card');
   cardDiv.innerHTML = `
   <div>
-    <h3><a href="${url}">${title}</a></h3>
+    <h3 class="capitalize"><a href="${url}">${title}</a></h3>
     <div class="under-title">
       <p>${languages}</p>
       <a href="${repo}">repo</a>
