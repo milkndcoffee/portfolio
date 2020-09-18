@@ -6,10 +6,11 @@
   <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
   <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
 -->
-  
+
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +24,7 @@
 
   <title>Adrian De Guzman</title>
 </head>
+
 <body id="body" onload="setTheme(); updateTime();">
   <div class="container" id="container">
 
@@ -30,21 +32,38 @@
     <button class="theme-button" onclick="toggleTheme();" id="theme-button">Dark</button>
     <p id="time"></p>
 
-    <header >
+    <header>
       <h1>Adrian De Guzman</h1>
       <div class="thinner-font">
         <p class="section-info">
           Computer Science Graduate<br>
           Illinois - U.S.
         </p>
+        <div class="about-me thinner-font">
+          <p>
+            Hi, I'm Adrian. <br>
+            I am an aspiring <strong>web developer</strong> & <strong>software developer</strong>. <br><br>
+
+            I graduated from <strong><a href="https://lewisu.edu/index.htm">Lewis University</a></strong> with a B.S. in
+            Computer Science with a focus in software engineering.
+            Although my focus was on <strong>software engineering</strong>, I find myself enveloped in the fun of
+            <strong>web development</strong>.
+          </p>
+          <div class="img-container">
+            <img src="img/profile-pic.jpg" alt="profile-pic" style="background-color: gray;" />
+          </div>
+        </div>
       </div>
     </header>
     <hr>
-    
+
     <main>
       <section>
-        <h2>Language & Tools</h2>
-        <p class="section-info">Coding tools I am familiar with.</p>
+        <div class="sect-header">
+          <h2>Language & Tools</h2>
+          <p class="section-info">Coding tools I am familiar with.</p>
+        </div>
+
         <ul>
           <li class="html5">HTML5</li>
           <li class="js">JS</li>
@@ -52,37 +71,35 @@
           <li><a class="bootstrap" href="https://getbootstrap.com/">Bootstrap4</a></li>
           <li><a class="react" href="https://reactjs.org/">React</a></li>
           <li><a class="nodejs" href="https://nodejs.org/">Node.js</a></li>
-          <li><a class="pyt" href="https://www.python.org/">Pyt</a><a class="hon" href="https://www.python.org/">hon</a></li>
+          <li><a class="pyt" href="https://www.python.org/">Pyt</a><a class="hon" href="https://www.python.org/">hon</a>
+          </li>
           <li><a class="flask" href="https://palletsprojects.com/p/flask/">Flask</a> </li>
           <li><a class="vs" href="https://code.visualstudio.com/">VS Studio Code</a></li>
         </ul>
       </section>
-  
       <hr>
+
       <section id="project-sect">
-        <h2>Projects</h2>
-        <p class="section-info">Works on my freetime.</p>
-        <!-- TODO: 
-          - Mobile:
-            > Display 1 card per line in mobile
-            > make details and image hidden and reveal onclick
-
-          - Tablet/Desktop: 
-            > Display 2 card per line in +
-        -->
+        <div class="sect-header">
+          <h2>Projects</h2>
+          <p class="section-info">Works on my freetime.</p>
+        </div>
+        <div id="cards">
+          <!-- Load Cards Here -->
+        </div>
+        <p style="padding-top: 1rem;">
+          Want to see more?<br>
+          Check out the rest of my projects on <a href="https://github.com/milkndcoffee?tab=repositories">Github</a>.
+        </p>
       </section>
-      <p>
-      Want to see more?<br>
-      Check out the rest of my projects on <a href="https://github.com/milkndcoffee?tab=repositories">Github</a>.
-      </p>
-
     </main>
     <hr>
-    
+
     <footer>
       <p>Contact me @</p>
       <a href="mailto:adrianmaurel@gmail.com">adrianmaurel@gmail.com</a>
     </footer>
   </div>
 </body>
+
 </html>

@@ -8,10 +8,12 @@
   margin-right: auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/* spacing in regards to div/ sections/ etc.. */
 body{overflow-x: hidden;}
-header{padding: .5rem}
-section{padding: .5rem}
-footer{padding: .5rem}
+header{padding: .5rem;}
+section{padding: 0 .5rem 1rem .5rem;}
+.sect-header{padding: .5rem;}
+footer{padding: .5rem;}
 
 /* -----
    light
@@ -22,8 +24,14 @@ footer{padding: .5rem}
 .light-theme hr{width: 80%; color: rgba(249, 249, 249, 0.288);}
 .light-theme li{color:#DF164F;}
 .light-theme li a{color:#DF164F;}
-.light-theme .card{border: 1px solid rgba(51, 51, 51, 0.24);}
+.light-theme .card{
+  border: unset; 
+  background-color: #ffffffd7;
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.123); 
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.123);
+}
 .light-theme .card img {border: .5px solid rgba(240, 240, 240, 0.904);}
+.light-theme .about-me img {filter: contrast(1.1) hue-rotate(-10deg) contrast(90%) ;;}
 
   /* might implement bottom recolor */
   /* 
@@ -63,14 +71,13 @@ footer{padding: .5rem}
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.123);
 }
 .dark-theme .card a{color: #f9f9f9;}
-.dark-theme .card img{filter: contrast(80%) ;}
+.dark-theme img{filter: contrast(80%) ;}
 .dark-theme .under-title a{color:  #1579A8;}
 .dark-theme .under-title p{color: rgba(255, 255, 255, 0.705);}
 
-
 /* text styling */
 .thinner-font{font-weight: 400;}
-h1{font-weight: 400; margin-bottom: 0;}
+h1{font-weight: 600; margin-bottom: 0;}
 h2{font-weight: 500; font-size: 17pt; margin: .5rem 0;}
 .section-info{opacity: .5; font-size: 11pt;}
 p{margin: .5rem 0;}
@@ -91,6 +98,28 @@ li{
   padding: 1rem;
 }
 .capitalize {text-transform: capitalize;}
+strong{ font-weight: 700;}
+
+/*about me */
+.about-me{ 
+  display: inline-flex;
+  flex-flow: column-reverse;
+  align-items: center;
+  padding: .8rem;
+}
+.about-me p{ 
+  text-align: left;
+  font-size: 12pt;
+}
+.about-me img{
+  margin: 1rem;
+  display: inline-block;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+}
+
 
 /* card */
 .card{
@@ -112,6 +141,7 @@ li{
 .card img {display: none;}
 
 
+/* theme button & time */
 .theme-button{
   transition: transform 2s;
   z-index: 1;
@@ -199,8 +229,9 @@ footer p{margin: 0;}
   .card img{
     display: flex;
     width: auto;
-    height: 300px;
+    height: 280px;
   }
+  li:hover{transform: scale(1.2); transition: transform .5s;}
   ul{
     display: inline-flex;
     flex-wrap: wrap;
@@ -210,7 +241,7 @@ footer p{margin: 0;}
     margin: 0;
     padding: 0;
   }
-  .theme-button{margin-right: 15%; margin-bottom: 2%;}
+  .theme-button{margin-right: 6%; margin-bottom: 2%;}
   .anim-enlarge{
     transform: scale(60);
     transition: transform 1s;
@@ -219,8 +250,30 @@ footer p{margin: 0;}
     background-color: unset;
     left: unset;
     right: 0;
-    margin-right: 11.5%; 
+    margin-right: 2.5%; 
     margin-bottom: 2.3%;
+  }
+  .about-me{ 
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    padding: 2rem; 
+  }
+  .about-me p{ 
+    width: 50%;
+    text-align: left;
+    font-size: 12.5pt;}
+  .img-container{
+    padding: unset;
+    width: 350px;
+    height: auto;
+  }
+  .about-me img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
   }
 }
 

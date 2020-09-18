@@ -27,7 +27,7 @@ function getAllData() {
 getAllData();
 
 function createProject(data, i) {
-  let projectSect = document.getElementById('project-sect');
+  let cardsContainer = document.getElementById('cards');
   let project = [];
   let title, description, languages; 
   
@@ -86,6 +86,6 @@ function createProject(data, i) {
   </img>
   <p>${description}</p>
   `
-  projectSect.appendChild(cardDiv);
+  cardsContainer.appendChild(cardDiv);
 }
 
