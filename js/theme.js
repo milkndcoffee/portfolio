@@ -9,15 +9,17 @@ function toggleTheme() {
 }
 
 //called onload in body of html
-function setTheme(){
+function setTheme(manualSet){
   let bodyDom = document.getElementById('body');
   let themeButton = document.getElementById('theme-button');
 
   let dateObj = new Date();
   let hour = dateObj.getHours();
   //light theme 7AM - 5:59 PM ... dark theme 6:PM - 6:59AM
-  hour >= 18 || hour < 7 ? bodyDom.classList.add('dark-theme') : bodyDom.classList.add('light-theme')
-  bodyDom.classList.contains('light-theme') ? themeButton.innerHTML = 'Dark' : themeButton.innerHTML = 'Light';
+  if (manualSet != 'art'){
+    hour >= 18 || hour < 7 ? bodyDom.classList.add('dark-theme') : bodyDom.classList.add('light-theme')
+    bodyDom.classList.contains('light-theme') ? themeButton.innerHTML = 'Dark' : themeButton.innerHTML = 'Light';
+  } else {bodyDom.classList.add('art-theme');}
 }
 
 

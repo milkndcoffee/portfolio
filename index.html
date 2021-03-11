@@ -21,6 +21,7 @@
   <script src="js/theme.js"></script>
   <script src="js/githubRepo.js"></script>
   <script src="js/time.js"></script>
+  <script src="js/collapsible.js"></script>
 
   <title>Adrian De Guzman</title>
 </head>
@@ -37,22 +38,47 @@
       <div class="thinner-font">
         <p class="section-info">
           Computer Science Graduate<br>
-          Illinois - U.S.
+          California - U.S.
         </p>
         <div class="about-me thinner-font">
-          <p>
-            Hi, I'm Adrian. <br>
-            I am an aspiring <strong>web developer</strong> & <strong>software developer</strong>. <br><br>
 
-            I graduated from <strong><a href="https://lewisu.edu/index.htm">Lewis University</a></strong> with a B.S. in
-            Computer Science with a focus in software engineering.
-            Although my focus was on <strong>software engineering</strong>, I find myself enveloped in the fun of
-            <strong>web development</strong>.
-          </p>
-          <div class="img-container">
-            <img src="img/placeholder-pic.jpg" alt="profile-pic" style="background-color: gray;" />
+          <div class="text-container">
+            <!-- HOLDS INFO AND MORE INFO, BUT RUINS IMAGE PLACEMENT-->
+            <div >
+              <p>
+                Hi, I'm Adrian. <br>
+                I am an aspiring <strong>web developer</strong> & <strong>software developer</strong>. <br><br>
+
+                I graduated from <strong><a href="https://lewisu.edu/index.htm">Lewis University</a></strong> with a B.S. in Computer Science with a focus in software engineering.
+                Although my focus was originally in <strong>software engineering</strong>, I find myself enveloped in the fun of <strong>web development</strong>. <br><br>
+              </p>
+            </div>
+            <!--
+            <div >
+              PUT BUTTON HERE FOR MORE INFO
+              
+              <div class="hobby-div">
+                <button class="collapse-button" onclick="toggleCollapse()" style="width: max-content; font-size: 12pt; padding:.2rem .4rem;"> ... </button>
+                <div class="collapse-content" style="width: 100vw">
+                  <p>
+                    <strong>Hobbies & Interest</strong> <br>
+                    > I love to drink coffee and eat sweets<br>
+                    > Aside from coding, on my free time I love to make art!
+                    <br>
+                    Click <strong><a href="art.html">[here]</a></strong> to check out some of my art.
+                  </p>
+                </div>
+              </div>
+            </div>
+            -->
           </div>
+
+          <div class="img-container">
+            <img src="img/profile-pic.jpg" alt="profile-pic" style="background-color: gray;" />
+          </div>
+
         </div>
+
       </div>
     </header>
     <hr>
@@ -89,7 +115,8 @@
         </div>
         <p style="padding-top: 1rem;">
           Want to see more?<br>
-          Check out the rest of my projects on <a href="https://github.com/milkndcoffee?tab=repositories">Github</a>.
+          Check out the rest of my projects on <strong><a href="https://github.com/milkndcoffee?tab=repositories">[Github]</a></strong><br>
+          or come see my <strong><a href="art.html">[art]</a></strong>!
         </p>
       </section>
     </main>

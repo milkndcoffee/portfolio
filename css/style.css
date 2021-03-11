@@ -16,6 +16,23 @@ section{padding: 0 .5rem 1rem .5rem;}
 footer{padding: .5rem;}
 
 /* -----
+   art
+   ---- */
+   .art-theme{background: #f1eff0;; color: rgb(65, 65, 65);}
+   .art-theme a{color: #a75993;}
+   .art-theme hr{width: 80%; color: rgba(66, 66, 66, 0.1);}
+   .art-theme li{color:#c06a82;}
+   .art-theme li a{color:#c06a82;}
+   .art-theme .card{
+     border: unset; 
+     background-color: #ffffffd7;
+     -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.123); 
+     box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.123);
+   }
+   .art-theme .card img {border: .5px solid rgba(240, 240, 240, 0.904);}
+   .art-theme .about-me img {filter: contrast(1.1) hue-rotate(-10deg) contrast(90%) ;;}
+
+/* -----
    light
    ---- */
 .light-theme{background: #f9f9f9; color: black;}
@@ -32,19 +49,6 @@ footer{padding: .5rem;}
 }
 .light-theme .card img {border: .5px solid rgba(240, 240, 240, 0.904);}
 .light-theme .about-me img {filter: contrast(1.1) hue-rotate(-10deg) contrast(90%) ;;}
-
-  /* might implement bottom recolor */
-  /* 
-  .light-theme ul {background: rgb(87, 85, 85);}
-  .light-theme ul .html5{color:#e29c33;}
-  .light-theme ul .js{color:#f8df52;}
-  .light-theme ul .css3{color:#a3c9ec;}
-  .light-theme li .bootstrap{color:#a571e9;}
-  .light-theme li .react{color:#36bee4;}
-  .light-theme li .nodejs{color:#3ba539;}
-  .light-theme li .pyt{color: #3c8ed1;} .light-theme li .hon{color: #e7b900;}
-  .light-theme li .flask{color: #ffffff;}
-  .light-theme li .vs{color:#007bcd;}*/
 
 /* ----
    dark
@@ -76,6 +80,14 @@ footer{padding: .5rem;}
 .dark-theme .under-title p{color: rgba(255, 255, 255, 0.705);}
 
 /* text styling */
+input, button, submit { border:none; } 
+.collapse-content{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+} .collapse-button{
+  background-color: rgba(230, 230, 230, 0.8);
+}
 .thinner-font{font-weight: 400;}
 h1{font-weight: 600; margin-bottom: 0;}
 h2{font-weight: 500; font-size: 17pt; margin: .5rem 0;}
@@ -140,6 +152,37 @@ strong{ font-weight: 700;}
 .card h3{font-weight: 400; margin-bottom: 0;}
 .card img {display: none;}
 
+.img-cards{
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.img-card{
+  box-shadow: 0px 0px 1px 1px rgba(167, 167, 167, 0.123);
+  height: max-content;
+  padding: 1rem 0;
+}
+.img-card img{
+  width: 90%;
+  padding: .2rem .5rem;
+  text-align: left;
+  background-color: unset;
+}
+.img-card h3 {
+  font-weight: 200;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.img-card .text{
+  display: inline-flex; 
+  align-items: baseline;
+}
+.img-card .text *{
+  margin: 0 .4rem;
+}
 
 /* theme button & time */
 .theme-button{
@@ -155,6 +198,7 @@ strong{ font-weight: 700;}
   font-size: 11pt;
 }
 #time{
+  display: none;
   padding: .1rem;
   position: fixed;
   bottom: 0;
@@ -211,7 +255,7 @@ footer{
 }
 footer p{margin: 0;}
 
-
+.desktop-only{display: none;}
 
 /* ----------------
    Desktop Viewport
@@ -220,6 +264,7 @@ footer p{margin: 0;}
   .container{
     width: 80%;
   }
+  .desktop-only{display: unset;}
   .card{
     display: inline-flex;
     width: 320px;
@@ -247,6 +292,7 @@ footer p{margin: 0;}
     transition: transform 1s;
   }
   #time{
+    display: unset;
     background-color: unset;
     left: unset;
     right: 0;
@@ -261,10 +307,16 @@ footer p{margin: 0;}
     width: 75%;
     padding: 2rem; 
   }
-  .about-me p{ 
+  .about-me .text-container{
+    display: inline-flex;
+    flex-flow: column;
+    align-items: left;
     width: 50%;
+  }
+  .about-me .text-container p{ 
     text-align: left;
-    font-size: 12.5pt;}
+    font-size: 12.5pt;
+  }
   .img-container{
     padding: unset;
     width: 350px;
@@ -272,8 +324,19 @@ footer p{margin: 0;}
   }
   .about-me img{
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
+    border-radius: 2%;
+  }
+  .hobby-div{
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .img-cards{
+    flex-direction: row;
+  }
+  .img-card{
+    width: 400px;
   }
 }
 
